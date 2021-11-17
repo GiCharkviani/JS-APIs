@@ -3,9 +3,10 @@
 ## How we do
 ## `after break`
 1. **Task**
-2. **Code Review (30-1)** - add into *"What to do"*
+2. only if exam comes (max. 1 week early) - Preparing for the exam;
+3. **Code Review (30-1)** - add into *"What to do"*
  | <b><sup>if:</sup></b> having time - DO IT; in the end <small>(JS or/and TS)</small> still not sorted - DO IT!  
-3. **Jonas (Writing Library)** <sub>checking in *"what to do"* and setting as the first priority</sub>
+4. **Jonas (Writing Library)** <sub>checking in *"what to do"* and setting as the first priority</sub>
 
 <sup>then:</sup> only what is new or neccessary to learn or remind 
 
