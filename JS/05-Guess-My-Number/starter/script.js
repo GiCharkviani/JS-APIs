@@ -54,7 +54,6 @@ const checkFunc = function () {
       document.querySelector('.message').textContent = '😭 Your lost the game';
       document.querySelector('body').style.backgroundColor = 'red'
     }
-
      // when guess is too low
   }
 };
