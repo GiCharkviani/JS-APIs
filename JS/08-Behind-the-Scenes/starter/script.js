@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // function calcAge(bithYear) {
 //   const age = 2037 - bithYear;
@@ -47,3 +47,33 @@ console.log(me);
 var me = 'Jonas';
 let job = 'Teacher';
 const year = 1991
+
+
+// Functions
+console.log(addDecl(5,6))
+// console.log(addExp(5,6))
+// console.log(addArrow(5,6))
+
+function addDecl(a,b) {
+    return a + b;
+}
+
+const addExp = function(a,b) {
+    return a + b;
+}
+
+var addArrow = (a,b) => a+b;
+
+// Example
+
+if(!numProd) deleteShoppingCart()
+
+var numProd = 10;
+
+function deleteShoppingCart() {
+    console.log('All products deleted!')
+}
+
+var x = 1;
+let y = 3;
+const z = 3;
