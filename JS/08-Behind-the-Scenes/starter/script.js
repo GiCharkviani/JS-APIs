@@ -173,6 +173,17 @@
 // lastName = 'Davids';
 // console.log(lastName, oldLastName)
 
-var david = 'David'
-let david1 = 'David'
-const david2 = 'David'
+
+
+// Copying Objects
+
+const jessica2 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Bob']
+}
+
+const jessicaCpy = Object.assign({}, jessica2);
+
+// this only works for first object (if there is inner (family), that won't copy), so it makes only shallow copy, not deep
