@@ -1,13 +1,10 @@
-/* CLOSURES */
-const secureBooking = function() {
-    let passengerCount = 0;
-    return function() {
-        passengerCount++;
-        console.log(`${passengerCount} passengers`)
-    }
-}
+// all done well!
 
-const booker = secureBooking();
-booker()
-booker()
-booker()
+(function() {
+    const header = document.querySelector('h1');
+    header.style.color = 'red';
+
+    document.querySelector('body').addEventListener('click', function() {
+        header.style.color = 'blue' // will get access, because this function in closure has all Execution Context variables
+    })
+})()
