@@ -12,7 +12,7 @@ html {
 body {
   font-family: system-ui;
   color: #555;
-  background-color: #f7f7f7;
+  background-color: #3a3a3a;
   min-height: 100vh;
 
   display: flex;
@@ -29,7 +29,8 @@ body {
 .countries {
   /* margin-bottom: 8rem; */
   display: flex;
-
+  flex-wrap: wrap;
+  width: 100%;
   font-size: 2rem;
   opacity: 0;
   transition: opacity 1s;
@@ -41,7 +42,7 @@ body {
   font-size: 1.8rem;
   width: 30rem;
   border-radius: 0.7rem;
-  margin: 0 3rem;
+  margin: 1em 3rem;
   /* overflow: hidden; */
 }
 
