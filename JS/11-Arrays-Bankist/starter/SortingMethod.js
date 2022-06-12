@@ -47,7 +47,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // SORTING - will mutate original array - it does sorting based on strings
 // Strings
 const owners = ['Jonas', 'Zach', 'Adam', 'Martha'];
-console.log(owners.sort());
+console.log(movements.sort());
 console.log(owners);
 
 // Numbers
