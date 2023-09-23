@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What do you want</h1>
+
+    <input type="text">
+
+    <script>
+        /* Dedicated worker */
+
+        // let worker = new Worker('worker.js');
+        // let msg = 'Foo';
+        // let person = {
+        //     name: 'Gio',
+        //     age: 21,
+        //     isGood: true,
+        //     hobbies: ['br', 'tr']
+        // }
+
+        // worker.postMessage(msg);
+        // worker.addEventListener('message', (messageEvent) => {
+        //     console.log('In HTML: ' + messageEvent.data)
+        // })
+        // // worker.terminate();
+        // worker.postMessage('This will not post');
+
+        // worker.terminate();
+
+        /* Shared worker */
+
+        // Browser link to find them: chrome://inspect/#workers
+
+        let sharedWorker = new SharedWorker('worker.js');
+        sharedWorker.port.postMessage('Hello worker');
+        sharedWorker.port.onmessage = (data) => {
+            console.log(data.data)
+        }
+
+
+        /**
+         * Type of workers
+         * 1. Dedicated workers
+         *  lifecycle - create (new Worker()) -> destroy (close() or terminate())
+         * 2. Shared workers
+         *  lifecycle - create (new ) -> connect -> startup (start()) -> destroy (close() or port.close())
+         */
+    </script>
+</body>
+</html>
